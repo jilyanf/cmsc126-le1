@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Fried Rice Recipe - Step 2</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+
+    <!-- 🔹 Banner with Recipe Title -->
+    <header class="banner">
+        <h1>Egg Fried Rice</h1>
+    </header>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="step1.html">Step 1</a>
+        <a class="disabled">Step 2</a>
+        <a href="step3.html">Step 3</a>
+        <a href="step4.html">Step 4</a>
+        <a href="step5.html">Step 5</a>
+    </nav>
+ 
+    <!-- 🔹 Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress" style="width: 30%"></div> 
+    </div>
+
+    <!-- 🔹 Step 1 Content -->
+    <main>
+        <h2>Step 2</h2>
+        <p>Bring water, soy sauce, and salt to a boil in a medium saucepan.
+        Stir in instant rice and remove from heat. Cover and let stand for 5 minutes.</p>
+        <section>
+            <img src="step2_img.png" width="400" height="300" alt="Saucepan with instant 
+            rice mixed with soy sauce and salt."
+        </section>
+    </main>
+
+    <a href="step1.html" class="nav-button prev-button">← Prev</a>
+    <a href="step3.html" class="nav-button next-button">Next →</a>
+
+    <footer>
+        <p>Use ← and → keys to navigate.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowRight") {
+                window.location.href = "step3.html";
+            }
+            if (event.key === "ArrowLeft") {
+                window.location.href = "step1.html"
+            }
+        });
+    </script>
+
+</body>
+</html>

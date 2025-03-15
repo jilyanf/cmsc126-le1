@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Fried Rice Recipe - Step 4</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+
+    <!-- 🔹 Banner with Recipe Title -->
+    <header class="banner">
+        <h1>Egg Fried Rice</h1>
+    </header>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="step1.html">Step 1</a>
+        <a href="step2.html">Step 2</a>
+        <a href="step3.html">Step 3</a>
+        <a href="step4.html">Step 4</a>
+        <a class="disabled">Step 5</a>
+    </nav>
+ 
+    <!-- 🔹 Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress" style="width: 100%"></div> 
+    </div>
+
+    <main>
+        <h2>Step 5</h2>
+        <p>Add cooked rice to egg mixture; mix well. Season with pepper.</p>
+        <section>
+            <img src="step5_img.png" width="400" height="300" alt="Wok with mixed cooked rice
+            and egg and added pepper."
+        </section>
+    </main>
+
+    <a href="step4.html" class="nav-button prev-button">← Prev</a>
+
+    <footer>
+        <p>Use ← and → keys to navigate.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                window.location.href = "step3.html"
+            }
+        });
+    </script>
+
+</body>
+</html>

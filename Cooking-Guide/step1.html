@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Fried Rice Recipe - Step 1</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+
+    <!-- 🔹 Banner with Recipe Title -->
+    <header class="banner">
+        <h1>Egg Fried Rice</h1>
+    </header>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav class="nav-bar">
+        <a class="disabled">Step 1</a>
+        <a href="step2.html">Step 2</a>
+        <a href="step3.html">Step 3</a>
+        <a href="step4.html">Step 4</a>
+        <a href="step5.html">Step 5</a>
+    </nav>
+
+    <div class="progress-bar">
+        <div class="progress"></div> <!-- Step 1: 10% progress -->
+    </div>
+
+    <section class="recipe-description">
+        <p>This egg fried rice is quick and easy to make, perfect for a quick meal
+            or for using leftover rice and ingredients. Follow these simple steps to
+            create a delicious meal!
+        </p>
+    </section>
+
+
+    <section class="ingredients-box">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 cup water</li>
+            <li>2 tablespoons soy sauce</li>
+            <li>½ teaspoon salt</li>
+            <li>1 cup uncooked instant rice</li>
+            <li>1 teaspoon vegetable oil</li>
+            <li>½ onion, finely chopped</li>
+            <li>½ sliced green beans or peas</li>
+            <li>1 large egg, lightly beaten</li>
+            <li>¼ teaspoon ground black pepper</li>
+        </ul>
+    </section>
+
+    <main>
+        <h2>Step 1</h2>
+        <p>Gather all ingredients.</p>
+        <section>
+            <img src="step1_img.png" wdith="400" height="300" alt="Collection 
+            of ingredients in bowls.">
+        </section>
+    </main>
+
+    
+    <a href="step2.html" class="nav-button next-button">Next →</a>
+
+    <footer>
+        <p>Use ← and → keys to navigate.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowRight") {
+                window.location.href = "step2.html";
+            }
+        });
+    </script>
+
+</body>
+</html>
