@@ -321,17 +321,6 @@ body {
     justify-content: center;
 }
 
-/* Comments */
-aside {
-    width: 900px;
-    background-color: rgb(239, 239, 239);
-}
-
-.highlighted-post {
-    border: 1px solid #333;
-    padding: 10px;
-}
-
 .title-details {
     flex-direction: column;
 }
