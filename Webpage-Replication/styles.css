@@ -322,127 +322,47 @@ body {
 }
 
 /* Comments */
-.comments-section {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+aside {
+    width: 900px;
+    background-color: rgb(239, 239, 239);
+}
+
+.highlighted-post {
+    border: 1px solid #333;
     padding: 10px;
-    margin-top: 10px;
+}
+
+.title-details {
+    flex-direction: column;
+}
+
+.post-title {
+    font-weight: bold;
+    color: rgb(82, 13, 142);
+}
+
+.post-link {
+    color: gray;
+    font-size: 10px;
 }
 
 .post-details {
-    margin-bottom: 15px;
-}
-
-.post-details-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.post-details-meta {
-    font-size: 11px;
-    color: #888;
-}
-
-.comment {
-    margin-bottom: 10px;
-    border-bottom: 1px dotted #ccc;
-    padding-bottom: 10px;
-}
-
-.comment-header {
     display: flex;
-    align-items: center;
-    font-size: 11px;
-    margin-bottom: 3px;
+    flex-direction: row;
 }
 
-.comment-author {
-    color: #0000FF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.comment-score {
-    color: #888;
-    margin-left: 5px;
-}
-
-.comment-time {
-    color: #888;
-    margin-left: 5px;
-}
-
-.comment-body {
-    font-size: 13px;
-    margin-bottom: 5px;
-}
-
-.comment-actions {
-    font-size: 11px;
-}
-
-.comment-action {
-    color: #888;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.comment-list {
-    list-style-type: none;
-}
-
-.points-positive {
-    color: #FF8B60;
-}
-
-.highlighted {
-    background-color: #FFFFCC;
-}
-
-.page-navigation {
+.data {
     display: flex;
-    justify-content: center;
-    margin: 10px 0;
+    flex-direction: row;
+    margin-top: 5px;
 }
 
-.page-button {
-    padding: 3px 10px;
-    margin: 0 5px;
-    background-color: #EFF7FF;
-    border: 1px solid #5F99CF;
-    border-radius: 3px;
-    color: #336699;
-    text-decoration: none;
+.up-votes {
+    color: red;
+    font-size: 10px;
 }
 
-.sidebar-spacer {
-    height: 10px;
-}
-
-/* Comment indentation */
-.comment-indent {
-    padding-left: 15px;
-    border-left: 1px dotted #ccc;
-    margin-left: 5px;
-}
-
-/* Bullet point list */
-.bullet-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin: 5px 0;
-}
-
-/* Format help area */
-.format-help {
-    text-align: right;
-    font-size: 11px;
-    margin-bottom: 5px;
-}
-
-.format-help a {
-    color: #336699;
-    text-decoration: none;
+.down-votes {
+    color: rgb(27, 27, 184);
+    font-size: 10px;
 }
