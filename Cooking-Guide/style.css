@@ -1,0 +1,165 @@
+* {
+    user-select: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🔹 Recipe Banner */
+.banner {
+    position: relative;
+    background: url('banner-img.jpg') center/cover no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* 🔹 Navigation Bar */
+.nav-bar {
+    background: #333;
+    padding: 10px 0;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+.nav-bar .disabled {
+    pointer-events: none; 
+    opacity: 0.4; 
+    color: gray; 
+}
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Recipe Description */
+.recipe-description {
+    background: #f8f8f8;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+/* 🔹 Ingredients Box */
+.ingredients-box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background: #f9fff9;
+    text-align: left;
+}
+
+.ingredients-box h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.ingredients-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-box ul li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.ingredients-box ul li:last-child {
+    border-bottom: none;
+}
+
+/* 🔹 Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+}
+.progress {
+    height: 5px;
+    width: 10%; /* Adjust per step */
+    background: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-button {
+    position: fixed;
+    bottom: 20px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.prev-button {
+    left: 20px;
+    background: #555;
+}
+
+.next-button {
+    right: 20px;
+    background: #4CAF50;
+}
+
+.prev-button:hover {
+    transform: scale(1.05);
+}
+
+.next-button:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Page Content */
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    font-size: 18px;
+}
+
+img[src$=".png"] {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 20px auto; 
+    border-radius: 12px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
