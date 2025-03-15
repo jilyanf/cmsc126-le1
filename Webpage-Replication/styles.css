@@ -243,12 +243,39 @@ body {
 
 /* Comments */
 .comments-section {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 10px;
-    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    right: -400px; /* Start hidden */
+    width: 400px;
+    height: 100vh;
+    background: white;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+.comments-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+}
+
+#closeComments {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.comments-content {
+    padding: 10px;
+}
+
 
 .post-details {
     margin-bottom: 15px;
@@ -365,4 +392,10 @@ body {
 .format-help a {
     color: #336699;
     text-decoration: none;
+}
+
+.nav-button:focus,
+.nav-button:focus-visible {
+    outline: 3px solid #ffcc00; /* Adds a visible focus indicator */
+    background: #6abf69; /* Slight color change */
 }

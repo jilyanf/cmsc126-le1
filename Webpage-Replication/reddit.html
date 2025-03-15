@@ -123,12 +123,22 @@
                             submitted 19 hours ago by krispykrackers
                         </div>
                         <div class="post-metadata">
-                            <a href="#">623 comments</a>
+                            <a href="#" class="comment-link" data-post-id="1">623 comments</a>
                             <a href="#">share</a>
                             <a href="#">save</a>
                             <a href="#">hide</a>
                             <a href="#">report</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="comments-section" id="commentsSection">
+                    <div class="comments-header">
+                        <span>Comments</span>
+                        <button id="closeComments">✖</button>
+                    </div>
+                    <div class="comments-content">
+                        <p>Loading comments...</p>
                     </div>
                 </div>
                 
@@ -515,5 +525,33 @@
                         </div>
                     </div>
                 </div>
-
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const commentsSection = document.getElementById("commentsSection");
+                        const closeBtn = document.getElementById("closeComments");
+                    
+                        document.querySelectorAll(".comment-link").forEach(link => {
+                            link.addEventListener("click", function (event) {
+                                event.preventDefault();
+                                
+                                // Simulate loading comments
+                                document.querySelector(".comments-content").innerHTML = `
+                                    <p>Fetching comments for post ID: ${this.dataset.postId}...</p>
+                                    <p>Comment 1: This is amazing!</p>
+                                    <p>Comment 2: Lol, so true.</p>
+                                `;
+                    
+                                // Show the comment section
+                                commentsSection.style.right = "0";
+                            });
+                        });
+                    
+                        // Close the comment section
+                        closeBtn.addEventListener("click", function () {
+                            commentsSection.style.right = "-400px";
+                        });
+                    });
+                    </script>
+                    
+</body>
                 
