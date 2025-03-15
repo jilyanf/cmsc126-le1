@@ -122,6 +122,13 @@ body {
     padding: 5px;
 }
 
+.sidebar-block img {
+    width: 100%;   /* Makes the image fully fit the sidebar block */
+    height: auto;  /* Maintains the image’s aspect ratio */
+    display: block; /* Removes extra space below the image */
+    border-radius: 5px; /* Optional: Matches the sidebar block’s rounded corners */
+}
+
 .sidebar-title {
     font-weight: bold;
     margin-bottom: 5px;
@@ -149,6 +156,7 @@ body {
 
 .post {
     display: flex;
+    align-items: center;
     margin-bottom: 7px;
     background-color: white;
     border: 1px solid #ccc;
@@ -158,11 +166,13 @@ body {
 
 .post-votes {
     display: flex;
+    width: 10%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 40px;
     font-size: 11px;
-    padding-right: 5px;
+    margin-right: 10px;
 }
 
 .vote-arrow {
@@ -181,11 +191,14 @@ body {
     width: 70px;
     height: 50px;
     object-fit: cover;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .post-content {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 .post-title {
@@ -203,9 +216,14 @@ body {
     font-size: 11px;
 }
 
-.post-metadata {
+.post-description {
     font-size: 10px;
     color: #888;
+}
+
+.post-metadata {
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .post-metadata a {
@@ -217,7 +235,10 @@ body {
 .post-number {
     color: #C6C6C6;
     font-size: 13px;
-    margin-right: 5px;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Comments */
