@@ -109,44 +109,116 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 150px;
-    margin-right: 10px;
-    flex-shrink: 0;
+    width: 160px;
+    background-color: #deeaf7;
+    padding-right: 10px;
+    margin-right: 5px;
 }
 
-.sidebar-block {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.section {
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+.section-header img {
+    padding-left: 10px;
+    height: 100%;
+}
+
+.section.submit-section {
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #b9d5f2;
 }
 
-.sidebar-block img {
-    width: 100%;   /* Makes the image fully fit the sidebar block */
-    height: auto;  /* Maintains the image’s aspect ratio */
-    display: block; /* Removes extra space below the image */
-    border-radius: 5px; /* Optional: Matches the sidebar block’s rounded corners */
+.section.submit-section h2 {
+    font-size: 12px;
 }
 
-.sidebar-title {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 13px;
-    color: #222;
+.section.submit-section p {
+    font-size: 10px;
 }
 
-.sidebar-link {
+.section.create-section {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #b9d5f2;
+}
+
+.section.create-section h2 {
+    font-size: 12px;
+}
+
+.section.create-section p {
+    font-size: 10px;
+}
+
+.section a {
     display: block;
-    padding: 2px 0;
+    padding: 3px 5px;
+    color: #616161;
+    font-weight: bold;
+    font-size: 10px;
     text-decoration: none;
-    color: #336699;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.sidebar-text {
-    font-size: 11px;
+.section a.extend {
+    padding-left: 12px;
+    color: #369;
+}
+
+.section-header-active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    background-color: #fff;
+    border-top: #333 1px solid;
+    border-bottom: #333 1px solid;
+}
+
+.section-header-active img {
+    padding-left: 10px;
+    height: 100%;
+}
+
+.section a.active {
+    color: #FF4500;
+}
+
+.section h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #369;
+}
+
+.section p {
     color: #555;
-    margin-top: 5px;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.ad {
+    text-align: center;
+    font-size: 10px;
+    color: #888;
+}
+
+.ad img {
+    display: block;
+    margin: 0 auto 5px;
+    width: 100%;
 }
 
 /* Content */
@@ -177,6 +249,12 @@ body {
 
 .vote-arrow {
     color: #C6C6C6;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.vote-arrow-active {
+    color: #FF8B60;
     font-size: 16px;
     cursor: pointer;
 }
@@ -235,7 +313,9 @@ body {
 .post-number {
     color: #C6C6C6;
     font-size: 13px;
-    width: 5%;
+    width: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
